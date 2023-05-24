@@ -1,6 +1,25 @@
 <header class="header">
   <nav class="nav">
-    <div class="logo"></div>
-    <h1 class="title">Wayfarer</h1>
+    <div class="home">
+      <a class="logo" routerLink="/">Hi</a>
+      <h1 class="title">Wayfarer</h1>
+    </div>
+    <ul class="cities">
+      <li class="city">
+        <a routerLink="cities/1">San Francisco</a>
+      </li>
+      <li class="city">
+        <a routerLink="cities/2">London</a>
+      </li>
+      <li class="city">
+        <a routerLink="cities/3">Seattle</a>
+      </li>
+      <li class="city">
+        <a routerLink="cities/4">Sydney</a>
+      </li>
+    </ul>
+    <form>
+      <input class="search" type="text" placeholder="Search">
+    </form>
   </nav>
 </header>
