@@ -1,23 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './component/header/header.component';
+import { HeaderComponent } from './header/header.component';
 import { CitiesComponent } from './cities/cities.component';
 
-
-
-
 const routes: Routes = [
-  
-{
+  {
     path: 'cities/:id',
-    component: CitiesComponent
-},
-
-
+    component: CitiesComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
