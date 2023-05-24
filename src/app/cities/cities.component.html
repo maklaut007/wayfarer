@@ -1,8 +1,15 @@
-<ul>
-    <li>
+<main class="main">
+  <aside class="aside">
+    <h1 class="title">Cities</h1>
+    <article
+      *ngFor="let city of citiesList"
+      class="city"
+      [ngClass]="{ selected: city.id == cityIndex }"
+    >
+      <img class="city__photo" src="{{ city.photo }}" alt="{{ city.name }}" />
 
-    </li>
-</ul>
-{{cityIndex}}
-<p>Something else</p>
-<app-post [city] = 'cityIndex'></app-post>
+      <div class="city__mane">{{ city.name }}</div>
+    </article>
+  </aside>
+  <app-post [city]="cityIndex"> </app-post>
+</main>
