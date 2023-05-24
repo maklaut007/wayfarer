@@ -1,0 +1,23 @@
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.aside {
+  background-color: #aaa;
+  width: 30vw;
+}
+.city {
+  display: flex;
+  margin: 5px 20px;
+}
+.city__photo {
+  width: 100px;
+}
+.city__name {
+  height: 100%;
+  display: flex;
+}
+.selected {
+  background: green;
+}
