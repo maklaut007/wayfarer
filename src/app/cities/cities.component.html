@@ -1,7 +1,7 @@
 <main class="main">
   <aside class="aside">
     <h1 class="title">Cities</h1>
-    <article
+    <a [routerLink]="['/cities', city.id]"
       *ngFor="let city of citiesList"
       class="city"
       [ngClass]="{ selected: city.id == cityIndex }"
@@ -9,7 +9,7 @@
       <img class="city__photo" src="{{ city.photo }}" alt="{{ city.name }}" />
 
       <div class="city__mane">{{ city.name }}</div>
-    </article>
+    </a>
   </aside>
   <section>
     <app-post [city]="cityIndex"> </app-post>
