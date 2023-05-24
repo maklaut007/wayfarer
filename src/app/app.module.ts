@@ -7,9 +7,10 @@ import { CitiesComponent } from './cities/cities.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { PostComponent } from './post/post.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CitiesComponent, PostComponent],
+  declarations: [AppComponent, HeaderComponent, CitiesComponent, PostComponent, SearchComponent],
   imports: [BrowserModule, RouterModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
