@@ -6,6 +6,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { CitiesComponent } from './cities/cities.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { PostComponent } from './post/post.component';
 
 
 
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    CitiesComponent
+    CitiesComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
