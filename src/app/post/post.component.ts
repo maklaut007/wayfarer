@@ -8,7 +8,7 @@ import { Subject } from 'rxjs';
   styleUrls: ['./post.component.css'],
 })
 export class PostComponent{
-  @Input() city: string | null = '';
+  @Input() city: any | null 
   posts: any;
   searchSubject = new Subject();
 
