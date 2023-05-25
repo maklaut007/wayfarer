@@ -9,11 +9,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { PostComponent } from './post/post.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CitiesComponent, PostComponent, SearchComponent],
-  imports: [BrowserModule, RouterModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    CitiesComponent,
+    PostComponent,
+    SearchComponent,
+    CarouselComponent,
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule,
+    FormsModule,
+    NgbModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
