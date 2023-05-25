@@ -1,0 +1,11 @@
+.imageWrap{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+}
+
+.cityImage{
+    width: 80vw;
+    height: 80vh;
+    object-fit: cover;
+}
