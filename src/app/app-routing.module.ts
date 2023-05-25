@@ -8,6 +8,7 @@ const routes: Routes = [
     path: 'cities/:id',
     component: CitiesComponent,
   },
+
 ];
 
 @NgModule({
