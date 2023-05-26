@@ -20,7 +20,7 @@ export class SearchService {
   filterPosts(searchKeyword: string) {
     if (searchKeyword) {
       this.filteredPosts = posts.filter(post => {
-        return post.title.includes(searchKeyword);
+        return post.title.toLowerCase().includes(searchKeyword);
       });
       this.filteredComponentsSubject.next(this.filteredPosts);
     } else {
