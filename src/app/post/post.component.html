@@ -8,7 +8,7 @@
   </div>
   <h3>Posts</h3>
   <ul class="post-list">
-    <ng-container *ngFor="let post of posts" >
+    <a [routerLink]="['./post', post.id ]" *ngFor="let post of posts" >
       <li class="post" *ngIf = "city.id == post.cityId">
           <img src="{{city.photoSmall}}" class="post-image"/>
         <div>
@@ -17,6 +17,6 @@
           <p class="post-content">{{(post.content.length>200)? (post.content | slice:0:200)+'...':(post.content)}}</p>
         </div>
       </li>
-    </ng-container>
+    </a>
   </ul>
 </div>
