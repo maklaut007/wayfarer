@@ -1,0 +1,30 @@
+.imageWrap {
+  width: 70vw;
+  height: 70vh;
+  margin: auto;
+}
+
+.cityImage {
+  width: 70vw;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.wayfarer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  width: 70vw;
+  margin: auto;
+  grid-column-gap: 50px;
+  color: #e3e3e3;
+}
+.wayfarer__title {
+  margin: 20px;
+  grid-column: 1/4;
+  font-size: 3rem;
+}
+.topic {
+  width: 60%;
+  text-align: center;
+}

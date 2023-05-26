@@ -1,0 +1,37 @@
+.main {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+  color: #e3e3e3;
+}
+.aside {
+  background-color: #233142;
+  border-radius: 12px;
+  padding: 12px;
+}
+.city {
+  display: flex;
+  margin: 12px 0px;
+  border-radius: 12px;
+  padding: 12px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #e3e3e3;
+  background-color: #455d7a;
+  transition: background-color 0.5s ease-in-out;
+}
+.city__photo {
+  width: 100px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+
+
+.selected {
+  background: #f95959;
+}
+
+

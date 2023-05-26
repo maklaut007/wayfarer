@@ -1,0 +1,32 @@
+<ngb-carousel class="imageWrap" *ngIf="cities">
+  <ng-template ngbSlide *ngFor="let city of cities">
+    <a routerLink="cities/{{ city.id }}" class="picsum-img-wrapper">
+      <img class="cityImage" [src]="city.photoLarge" alt="Random first slide" />
+    </a>
+    <div class="carousel-caption">
+      <h3>{{ city.name }}</h3>
+      <p>Check out {{ city.name }}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<section class="wayfarer">
+  <h2 class="wayfarer__title">Wayfarer is ...</h2>
+  <article class="topic">
+    <h3>Topic</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto inventore
+    sapiente exercitationem, sunt odit incidunt molestiae temporibus iste sit,
+    facere totam quod labore!
+  </article>
+  <article class="topic">
+    <h3>Topic</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto inventore
+    sapiente exercitationem, sunt odit incidunt molestiae temporibus iste sit,
+    facere totam quod labore!
+  </article>
+  <article class="topic">
+    <h3>Topic</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto inventore
+    sapiente exercitationem, sunt odit incidunt molestiae temporibus iste sit,
+    facere totam quod labore!
+  </article>
+</section>

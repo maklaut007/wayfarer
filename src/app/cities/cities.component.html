@@ -1,0 +1,17 @@
+<main class="main">
+  <aside class="aside">
+    <h1 class="title">Cities</h1>
+    <a [routerLink]="['/cities', city.id]"
+      *ngFor="let city of citiesList"
+      class="city"
+      [ngClass]="{ selected: city.id == cityIndex }"
+    >
+      <img class="city__photo" src="{{ city.photoSmall }}" alt="{{ city.name }}" />
+
+      <div class="city__mane">{{ city.name }}</div>
+    </a>
+  </aside>
+  <section>
+    <app-post [city]="city"> </app-post>
+  </section>
+</main>
