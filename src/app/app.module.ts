@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     PostComponent,
     SearchComponent,
     CarouselComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@
 
 .nav {
   display: flex;
-  padding: 0px 15px;
+  padding: 10px 15px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -12,32 +12,29 @@
 
 .home {
   display: flex;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   background-color: red;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .title {
   margin-left: 50px;
+  margin-bottom: 0;
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
-.cities {
-  display: flex;
-  list-style-type: none;
-}
-
-.city {
-  margin: 10px;
-  padding: 15px;
-}
-
 .search {
   outline: none;
   justify-content: right;
+}
+.nav-right {
+  display: flex;
 }
