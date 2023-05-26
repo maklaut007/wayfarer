@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 15px;
+ 
 }
 
 .post-list {
@@ -22,14 +23,25 @@
 .post-image {
   width: 120px;
   height: 120px;
-  background-color: red;
   margin-right: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #e3e3e3;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover{
+  color: #f95959;
 }
 
 .post{
   display: grid;
   grid-template-columns: 1fr 5fr;
   margin-bottom: 20px;
+  border-bottom: 2px solid #233142;
+  padding: 5px;
 }
 
 .post-title, .post-author, .post-content {

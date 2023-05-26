@@ -17,6 +17,7 @@
   width: 70vw;
   margin: auto;
   grid-column-gap: 50px;
+  color: #e3e3e3;
 }
 .wayfarer__title {
   margin: 20px;
