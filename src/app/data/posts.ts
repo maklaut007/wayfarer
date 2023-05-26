@@ -3,7 +3,8 @@ interface Posts {
     cityId: number,
     title: string,
     author: string,
-    content: string   
+    content: string,
+    photo: string
 }
 
 export const posts: Posts[] = [
@@ -12,7 +13,8 @@ export const posts: Posts[] = [
         cityId: 1,
         title: 'Adventures in San Francisco',
         author: 'Lorena Rojas',
-        content: 'Visit San Francisco'
+        content: 'Visit San Francisco',
+        photo:'./assets/images/post-images/sf1.tiff'
     },
 
     {
@@ -20,7 +22,8 @@ export const posts: Posts[] = [
         cityId: 2,
         title: 'Adventures in London',
         author: 'Obinna Umerah',
-        content: 'Visit London'
+        content: 'Visit London',
+        photo:'./assets/images/post-images/london1.jpg'
     },
 
     {
@@ -28,7 +31,8 @@ export const posts: Posts[] = [
         cityId: 3,
         title: 'Adventures in Seattle',
         author: 'Maksym Zinchenko',
-        content: 'Visit Seattle'
+        content: 'Visit Seattle',
+        photo:'./assets/images/post-images/seattle1.jpg'
     },
 
     {
@@ -36,36 +40,41 @@ export const posts: Posts[] = [
         cityId: 4,
         title: 'Adventures in Sydney',
         author: 'Obinna Umerah',
-        content: 'Lorem ipsum dolor sit amet. Id voluptatem culpa et eligendi internos ex deleniti animi. Rem quas dolore eum molestias tenetur in aliquid quod et voluptate culpa qui perferendis nisi ut impedit necessitatibus. Vel magni mollitia eum fugiat sequi qui quaerat perspiciatis qui suscipit dolor non quia doloribus aut consequatur omnis et aliquid soluta! In velit rerum qui voluptates incidunt aut dignissimos optio est explicabo adipisci qui modi neque.'
+        content: 'Lorem ipsum dolor sit amet. Id voluptatem culpa et eligendi internos ex deleniti animi. Rem quas dolore eum molestias tenetur in aliquid quod et voluptate culpa qui perferendis nisi ut impedit necessitatibus. Vel magni mollitia eum fugiat sequi qui quaerat perspiciatis qui suscipit dolor non quia doloribus aut consequatur omnis et aliquid soluta! In velit rerum qui voluptates incidunt aut dignissimos optio est explicabo adipisci qui modi neque.',
+        photo:'./assets/images/post-images/sydney1.jpg'
     },
     {   id: 5,
         cityId: 1,
-        title: 'Adventures in San Francisco part 2',
-        author: 'Lorena Rojas',
-        content: 'Visit San Francisco'
+        title: 'A week in SF',
+        author: 'Maksym Zinchenko',
+        content: 'Visit San Francisco',
+        photo:'./assets/images/post-images/sf2.jpg'
     },
 
     {
         id: 6,
         cityId: 2,
-        title: 'Adventures in London part 2',
+        title: 'Land of the King',
         author: 'Obinna Umerah',
-        content: 'Visit London'
+        content: 'Visit London',
+        photo:'./assets/images/post-images/london2.jpg'
     },
 
     {
         id: 7,
         cityId: 3,
-        title: 'Adventures in Seattle part 2',
-        author: 'Maksym Zinchenko',
-        content: 'Visit Seattle'
+        title: 'The EMP in Seattle',
+        author: 'Lorena Rojas',
+        content: 'Visit Seattle',
+        photo:'./assets/images/post-images/seattle2.jpg'
     },
 
     {
         id: 8,
         cityId: 4,
-        title: 'Adventures in Sydney part 2',
-        author: 'Obinna Umerah',
-        content: 'Visit Sydney'
+        title: 'A trip to Sydney',
+        author: 'Maksym Zinchenko',
+        content: 'Visit Sydney',
+        photo:'./assets/images/post-images/sydney2.jpg'
     }
 ]

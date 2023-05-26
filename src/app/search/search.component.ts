@@ -12,7 +12,7 @@ export class SearchComponent implements OnInit {
   constructor(private searchService: SearchService) {}
 
   findPost(keyword: string) {
-    this.searchService.filterPosts(this.keyword);
+    this.searchService.filterPosts(this.keyword.toLowerCase());
   }
 
   ngOnInit(): void {
