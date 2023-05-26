@@ -3,23 +3,23 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 30px;
+  color: #e3e3e3;
 }
 .aside {
-  border: 2px solid black;
-  background-color: lightgrey;
+  background-color: #233142;
   border-radius: 12px;
   padding: 12px;
 }
 .city {
   display: flex;
   margin: 12px 0px;
-  border: 1px solid black;
   border-radius: 12px;
   padding: 12px;
   align-items: center;
   text-decoration: none;
   font-size: 2rem;
-  color: black;
+  color: #e3e3e3;
+  background-color: #455d7a;
 }
 .city__photo {
   width: 100px;
@@ -28,7 +28,7 @@
 }
 
 .selected {
-  background: green;
+  background: #f95959;
 }
 
 
