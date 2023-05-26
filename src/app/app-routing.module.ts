@@ -9,12 +9,10 @@ const routes: Routes = [
     path: 'cities/:id',
     component: CitiesComponent,
   },
-
   {
     path: '',
     component: CarouselComponent,
-  }
-
+  },
 ];
 
 @NgModule({

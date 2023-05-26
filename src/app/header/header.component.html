@@ -1,23 +1,14 @@
 <header class="header">
   <nav class="nav">
     <div class="home">
-      <a class="logo" routerLink="/">Hi</a>
+      <a class="logo" routerLink="/">
+        <img src="/assets/images/london-mini.jpg" alt="" />
+      </a>
       <h1 class="title">Wayfarer</h1>
     </div>
-    <ul class="cities">
-      <li class="city">
-        <a routerLink="cities/1">San Francisco</a>
-      </li>
-      <li class="city">
-        <a routerLink="cities/2">London</a>
-      </li>
-      <li class="city">
-        <a routerLink="cities/3">Seattle</a>
-      </li>
-      <li class="city">
-        <a routerLink="cities/4">Sydney</a>
-      </li>
-    </ul>
-   <app-search></app-search>
+    <div class="nav-right">
+      <app-dropdown></app-dropdown>
+      <app-search></app-search>
+    </div>
   </nav>
 </header>
