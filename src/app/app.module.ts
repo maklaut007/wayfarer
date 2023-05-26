@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { PostPageComponent } from './post-page/post-page.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     SearchComponent,
     CarouselComponent,
     DropdownComponent,
+    PostPageComponent,
   ],
   imports: [
     BrowserModule,
