@@ -1,23 +1,32 @@
 .main {
   width: 100vw;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
 }
 .aside {
-  background-color: #aaa;
-  width: 30vw;
+  border: 2px solid black;
+  background-color: lightgrey;
+  border-radius: 12px;
+  padding: 12px;
 }
 .city {
   display: flex;
-  margin: 5px 20px;
+  margin: 12px 0px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 12px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
 }
 .city__photo {
   width: 100px;
+  border-radius: 12px;
+  margin-right: 10px;
 }
-.city__name {
-  height: 100%;
-  display: flex;
-}
+
 .selected {
   background: green;
 }

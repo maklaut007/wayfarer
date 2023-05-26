@@ -13,7 +13,7 @@ export const cities: Cities[] = [
     name: 'San Francisco',
     photoSmall: './assets/images/san-francisco-mini.jpg',
     photoLarge: './assets/images/san-francisco-large.jpg',
-    country: 'USA',
+    country: 'United States of America',
   },
 
   {
@@ -21,7 +21,7 @@ export const cities: Cities[] = [
     name: 'London',
     photoSmall: './assets/images/london-mini.jpg',
     photoLarge: './assets/images/london-large.jpg',
-    country: 'UK',
+    country: 'United Kingdom',
   },
 
   
@@ -31,7 +31,7 @@ export const cities: Cities[] = [
     name: 'Seattle',
     photoSmall: './assets/images/seattle-mini.webp',
     photoLarge: './assets/images/seattle-large.jpg',
-    country: 'USA',
+    country: 'United States of America',
   },
 
   {
