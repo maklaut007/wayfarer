@@ -21,8 +21,11 @@ export class AddPostComponent {
 
   onSubmit(): void {
     console.log(this.formData);
-    this.formData.value.cityId = this.city.id
-    this.postService.addPost(this.formData.value);
-
+    if(this.formData.value.title && this.formData.value.title.length > 1) {
+      this.formData.value.cityId = this.city.id
+      this.postService.addPost(this.formData.value);
+    } else {
+      alert("Title length is too small")
+    }
   }
 }
