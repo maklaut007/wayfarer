@@ -5,16 +5,13 @@
 		<button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
 	</div>
 	<div class="offcanvas-body">
-        <form [formGroup]="formData" (ngSubmit)="onSubmit()">
-            <input type="text" placeholder="Title" formControlName="title"/>
-            <input type="text" placeholder="Author" formControlName="author"/>
-            <textarea placeholder="Content" formControlName="content"></textarea>
-            <input type="text" placeholder="Photo address" formControlName="photo"/>
-            <button type="submit" class="submit-button">Post</button>
+        <form class="form"[formGroup]="formData" (ngSubmit)="onSubmit()">
+            <input class="form-element" type="text" placeholder="Title" formControlName="title"/>
+            <input class="form-element" type="text" placeholder="Author" formControlName="author"/>
+            <textarea class="form-element textarea" placeholder="Content" formControlName="content"></textarea>
+            <input class="form-element" type="text" placeholder="Photo address" formControlName="photo"/>
+            <button type="submit" class="submit-button" (click)="offcanvas.dismiss('Cross click')">Post</button>
         </form>
-		<div class="text-end">
-			<button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
-		</div>
 	</div>
 </ng-template>
 <button class="btn btn-lg btn-outline-primary mb-2 me-2" (click)="openEnd(content)">Add Post</button>
