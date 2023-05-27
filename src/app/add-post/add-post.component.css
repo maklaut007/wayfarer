@@ -1,0 +1,19 @@
+.submit-button {
+    width: 200px;
+    height: 50px;
+    outline: none;
+    background-color: #233142;
+    color: #e3e3e3;
+    font-size: 1.3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-element {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}

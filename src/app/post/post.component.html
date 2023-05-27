@@ -7,10 +7,11 @@
     <img class="img" src = "{{city.photoLarge}}"/>
   </div>
   <h3>Posts</h3>
+  <app-add-post [city]="city"></app-add-post>
   <ul class="post-list">
     <a [routerLink]="['./post', post.id ]" *ngFor="let post of posts" >
       <li class="post" *ngIf = "city.id == post.cityId">
-          <img src="{{city.photoSmall}}" class="post-image"/>
+          <img src="{{post.photo}}" class="post-image"/>
         <div>
           <h4 class="post-title">{{ post.title }}</h4>
           <h6 class="post-author"> Author: {{post.author}} </h6>
