@@ -1,17 +1,23 @@
-
-<ng-template #content let-offcanvas>
-	<div class="offcanvas-header">
-		<h4 class="offcanvas-title">Add post</h4>
-		<button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
-	</div>
-	<div class="offcanvas-body">
-        <form class="form"[formGroup]="formData" (ngSubmit)="onSubmit()">
-            <input maxlength="200" class="form-element" type="text" placeholder="Title" formControlName="title"/>
-            <input class="form-element" type="text" placeholder="Author" formControlName="author"/>
-            <textarea class="form-element textarea" placeholder="Content" formControlName="content"></textarea>
-            <input class="form-element" type="text" placeholder="Photo address" formControlName="photo"/>
-            <button type="submit" class="submit-button" (click)="offcanvas.dismiss('Cross click')">Post</button>
-        </form>
-	</div>
-</ng-template>
-<button class="btn btn-lg btn-outline-primary mb-2 me-2" (click)="openEnd(content)">Add Post</button>
+<div class="posts">
+  <div class="city">
+    <div>
+      <h2>{{city.name}}</h2>
+      <h4>{{city.country}}</h4>
+    </div>
+    <img class="img" src = "{{city.photoLarge}}"/>
+  </div>
+  <h3>Posts</h3>
+  <app-add-post [city]="city"></app-add-post>
+  <ul class="post-list">
+    <a [routerLink]="['./post', post.id ]" *ngFor="let post of posts" >
+      <li class="post" *ngIf = "city.id == post.cityId">
+          <img src="{{post.photo}}" class="post-image"/>
+        <div>
+          <h4 class="post-title">{{ post.title }}</h4>
+          <h6 class="post-author"> Author: {{post.author}} </h6>
+          <p class="post-content">{{(post.content.length>200)? (post.content | slice:0:200)+'...':(post.content)}}</p>
+        </div>
+      </li>
+    </a>
+  </ul>
+</div>

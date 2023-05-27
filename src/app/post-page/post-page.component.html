@@ -1,9 +1,13 @@
 <div class="postPage">
-<h1>{{post.title}}</h1>
-<h2>{{post.author}}</h2>
-<p>{{post.content}}</p>
-<img class="photo" src="{{post.photo}}"/>
-<div class="date">
-    <p>{{post.date.getFullYear()}}-{{post.date.getUTCMonth()}}-{{post.date.getUTCDate()}}</p>
-</div>
+  <h1>{{ post.title }}</h1>
+  <h2>{{ post.author }}</h2>
+  <p>{{ post.content }}</p>
+  <img class="photo" src="{{ post.photo }}" />
+  <div class="date">
+    <p>
+      {{ post.date.getFullYear() }}-{{ post.date.getUTCMonth() + 1 }}-{{
+        post.date.getUTCDate()
+      }}
+    </p>
+  </div>
 </div>
