@@ -1,14 +1,19 @@
 
 <ng-template #content let-offcanvas>
 	<div class="offcanvas-header">
-		<h4 class="offcanvas-title">Offcanvas title</h4>
+		<h4 class="offcanvas-title">Add post</h4>
 		<button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
 	</div>
 	<div class="offcanvas-body">
-		<p>One fine body&hellip;</p>
+        <form>
+            <input type="text" placeholder="Title"/>
+            <input type="text" placeholder="Author"/>
+            <textarea placeholder="Content"></textarea>
+            <input type="submit" value="Post"/>
+        </form>
 		<div class="text-end">
 			<button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
 		</div>
 	</div>
 </ng-template>
-<button class="btn btn-lg btn-outline-primary mb-2 me-2" (click)="openEnd(content)">Right position</button>
+<button class="btn btn-lg btn-outline-primary mb-2 me-2" (click)="openEnd(content)">Add Post</button>
