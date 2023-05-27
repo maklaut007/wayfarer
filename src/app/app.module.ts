@@ -8,11 +8,12 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { PostComponent } from './post/post.component';
 import { SearchComponent } from './search/search.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { PostPageComponent } from './post-page/post-page.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PostPageComponent } from './post-page/post-page.component';
     CarouselComponent,
     DropdownComponent,
     PostPageComponent,
+    AddPostComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { PostPageComponent } from './post-page/post-page.component';
     AppRoutingModule,
     FormsModule,
     NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

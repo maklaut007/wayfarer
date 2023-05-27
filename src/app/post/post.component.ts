@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SearchService } from '../services/search.service';
+import { PostService } from '../services/post.service';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -7,15 +7,15 @@ import { Subject } from 'rxjs';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
 })
-export class PostComponent{
+export class PostComponent implements OnInit{
   @Input() city: any | null 
   posts: any;
   searchSubject = new Subject();
 
-  constructor(private searchService: SearchService) {}
+  constructor(private postService: PostService) {}
 
   ngOnInit() {
-    this.searchService.getFilteredPosts().subscribe(posts => {
+    this.postService.getFilteredPosts().subscribe(posts => {
       this.posts = posts;
     });
   }

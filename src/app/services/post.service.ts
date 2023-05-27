@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { posts } from './../data/posts'
+import { posts } from '../data/posts';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SearchService {
+export class PostService {
+
   posts = posts;
   filteredPosts: any;
 
@@ -15,6 +16,9 @@ export class SearchService {
 
   getFilteredPosts(): Observable<any> {
     return this.filteredComponentsSubject.asObservable();
+  }
+  addPost(newPost: any): void {
+    this.posts.push(newPost);
   }
 
   filterPosts(searchKeyword: string) {
