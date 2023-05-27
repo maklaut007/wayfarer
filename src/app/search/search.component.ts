@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchService } from '../services/search.service';
+import { PostService } from '../services/post.service';
 
 @Component({
   selector: 'app-search',
@@ -9,10 +9,10 @@ import { SearchService } from '../services/search.service';
 export class SearchComponent implements OnInit {
   keyword: string = '';
 
-  constructor(private searchService: SearchService) {}
+  constructor(private postService: PostService) {}
 
   findPost(keyword: string) {
-    this.searchService.filterPosts(this.keyword.toLowerCase());
+    this.postService.filterPosts(this.keyword.toLowerCase());
   }
 
   ngOnInit(): void {
