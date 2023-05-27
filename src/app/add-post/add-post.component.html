@@ -6,7 +6,7 @@
 	</div>
 	<div class="offcanvas-body">
         <form class="form"[formGroup]="formData" (ngSubmit)="onSubmit()">
-            <input class="form-element" type="text" placeholder="Title" formControlName="title"/>
+            <input maxlength="200" class="form-element" type="text" placeholder="Title" formControlName="title"/>
             <input class="form-element" type="text" placeholder="Author" formControlName="author"/>
             <textarea class="form-element textarea" placeholder="Content" formControlName="content"></textarea>
             <input class="form-element" type="text" placeholder="Photo address" formControlName="photo"/>
