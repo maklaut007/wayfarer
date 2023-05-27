@@ -5,11 +5,12 @@
 		<button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
 	</div>
 	<div class="offcanvas-body">
-        <form>
-            <input type="text" placeholder="Title"/>
-            <input type="text" placeholder="Author"/>
-            <textarea placeholder="Content"></textarea>
-            <input type="submit" value="Post"/>
+        <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+            <input type="text" placeholder="Title" formControlName="title"/>
+            <input type="text" placeholder="Author" formControlName="author"/>
+            <textarea placeholder="Content" formControlName="content"></textarea>
+            <input type="text" placeholder="Photo address" formControlName="photo"/>
+            <button type="submit" class="submit-button">Post</button>
         </form>
 		<div class="text-end">
 			<button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
