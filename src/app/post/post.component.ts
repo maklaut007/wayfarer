@@ -14,6 +14,9 @@ export class PostComponent implements OnInit{
 
   constructor(private postService: PostService) {}
 
+  /**
+   * Subscribes to the post observable and adds lists of post to the component.
+   */
   ngOnInit() {
     this.postService.getFilteredPosts().subscribe(posts => {
       this.posts = posts;

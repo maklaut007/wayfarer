@@ -14,6 +14,10 @@ export class CitiesComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {}
 
+  /**
+   * Triggers when the component is generated.
+   * Subscribes to the route to get the list of cities.
+   */
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
       this.cityIndex = params.get('id');
