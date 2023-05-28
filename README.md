@@ -13,6 +13,11 @@
 
 ## Overview
 A front-end application that allows users to share city reviews.
+<img src="./src/assets/images/website/homepage.png" style="height: 15rem; width: 30rem"/>
+<img src="./src/assets/images/website/cities.png" style="height: 15rem; width: 30rem"/>
+<img src="./src/assets/images/website/post.png" style="height: 15rem; width: 30rem"/>
+
+
 
 ## Tools and Technologies
 * Angular
