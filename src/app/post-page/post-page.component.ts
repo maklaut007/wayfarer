@@ -17,6 +17,9 @@ constructor(private route: ActivatedRoute){
 
 }
 
+/**
+ * Subscribes to the route and loads the posts.
+ */
 ngOnInit() {
   this.route.paramMap.subscribe((params) => {
     this.post = this.postList.find((post: any) => {

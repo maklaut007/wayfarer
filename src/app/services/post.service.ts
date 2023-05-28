@@ -14,13 +14,26 @@ export class PostService {
   
   constructor() { }
 
+  /**
+   * Gets posts based on a search term
+   * @returns Observable filtered posts
+   */
   getFilteredPosts(): Observable<any> {
     return this.filteredComponentsSubject.asObservable();
   }
+
+  /**
+   * Adds posts to the list of posts
+   * @param newPost - New post to add
+   */
   addPost(newPost: any): void {
     this.posts.push(newPost);
   }
 
+  /**
+   * Filters posts based on a search term
+   * @param searchKeyword - Filters based on a search term
+   */
   filterPosts(searchKeyword: string) {
     if (searchKeyword) {
       this.filteredPosts = posts.filter(post => {

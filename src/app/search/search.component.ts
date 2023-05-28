@@ -11,6 +11,10 @@ export class SearchComponent implements OnInit {
 
   constructor(private postService: PostService) {}
 
+  /**
+   * Gets filtered posts from post service
+   * @param keyword - Search keyword
+   */
   findPost(keyword: string) {
     this.postService.filterPosts(this.keyword.toLowerCase());
   }
