@@ -1,27 +1,71 @@
 # Wayfarer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+## Table of Contents
+[Overview](#overview)  
+[Tools and Technologies](#tools-and-technologies)  
+[User Stories](#user-stories)  
+[Routes](#routes)
+[Planning Documentation](#planning-documentation)  
+[CLI Commands](#cli-commands)  
+[Dependencies](#dependencies)  
+[Resources](#resources)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
+A front-end application that allows users to share city reviews.
+<img src="./src/assets/images/website/homepage.png" style="height: 15rem; width: 30rem"/>
+<img src="./src/assets/images/website/cities.png" style="height: 15rem; width: 30rem"/>
+<img src="./src/assets/images/website/post.png" style="height: 15rem; width: 30rem"/>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Tools and Technologies
+* Angular
+* VSCode - IDE
+* Ng Bootstrap 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## User Stories
+* User should be able to view the homepage with carousel of cities.
+* User should be able to see city pages.
+* User should be able to choose city to see posts related to the city.
+* User should be able to create a new post in any city page.
+* User should be able to search for a post by the title of the post.
+* User should be able to open post page and view title, author, photo and date published. 
 
-## Running unit tests
+## Routes
+* Main page  
+http://localhost:4200/
+* Cities page  
+http://localhost:4200/cities/{cityId}
+* Post page  
+http://localhost:4200/cities/{cityId}/post/{id}
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Planning Documentation
+<img src="./src/assets/images/README-pictures/planning.png" style="height: 20rem; width: 30rem"/>
 
-## Running end-to-end tests
+## CLI commands
+`ng serve` - to run dev server, on `http://localhost:4200/`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`ng build` - to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Further help
+## Dependencies
+* @angular/animations  
+* @angular/common  
+* @angular/compiler  
+* @angular/core  
+* @angular/forms  
+* @angular/platform-browser  
+* @angular/platform-browser-dynamic  
+* @angular/router  
+* @ng-bootstrap/ng-bootstrap  
+* @popperjs/core  
+* bootstrap  
+* rxjs  
+* tslib  
+* zone.js  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Resources
+* [Google Images](www.google.com/images)
+* [Ng Bootstrap](https://ng-bootstrap.github.io)
+* [Stack Overflow](https://stackoverflow.com)
+* [SheCodes](https://palettes.shecodes.io)
